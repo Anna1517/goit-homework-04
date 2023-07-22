@@ -197,8 +197,16 @@ footer {
 
 /* HERO SECTION */
 .hero {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/HERO/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .hero-container {
   display: flex;
@@ -233,6 +241,16 @@ footer {
 .about-list {
   display: flex;
   gap: 24px;
+}
+.about-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--cloud);
+  justify-content: center;
 }
 .about-menu {
   margin-bottom: 8px;
@@ -281,8 +299,10 @@ footer {
 }
 .avatar-item {
   background-color: var(--white);
-  width: calc((1128px-3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .avatar-avatar {
@@ -296,10 +316,33 @@ footer {
   padding-bottom: 32px;
   text-align: center;
 }
+/*.list-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.link-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--iris);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks-icons {
+  fill: #f4f4fd;
+}*/
+
 /* SECTION PORTFPLIO */
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.portfolio-item {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .portfolio-btn {
   color: var(--iris);
@@ -339,6 +382,11 @@ footer {
 }
 .flex-item {
   width: calc((100% - 48px) / 3);
+}
+.flex-item:hover,
+.flex-item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-menu {
   font-weight: 500;
