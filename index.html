@@ -517,14 +517,15 @@
       </div>
     </footer>
     <!--Modal Window-->
-    <div class="backdrop">
-      <button class="modal-button">
-        <div class="modal">
+    <div class="backdrop" data-modal>
+      <div class="modal"></div>
+       <button class="modal-button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/iconos.svg/symbol-defs.svg#icon-close-black"></use>
           </svg>
-        </div>
-      </button>
+       </button>
+      </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
