@@ -186,6 +186,7 @@ footer {
   display: block;
   width: 100%;
   height: 4px;
+  color: var(--ocean);
   background-color: var(--ocean);
   border-radius: 2px;
   position: absolute;
@@ -207,6 +208,7 @@ footer {
   font-style: normal;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -431,13 +433,17 @@ footer {
   color: var(--ocean);
   display: block;
 }
+.portfolio-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-link:hover .overlay,
-.portfolio-link:focus {
+.portfolio-link:focus .overlay {
   transform: translateY(0%);
 }
 .overlay {
@@ -570,7 +576,7 @@ footer {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -579,11 +585,13 @@ footer {
   position: absolute;
   width: 408px;
   height: 584px;
+  min-width: 584px;
   background: var(--diari);
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) scale(1);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -603,12 +611,17 @@ footer {
   cursor: pointer;
   padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus {
-  color: var(--ocean);
+  background-color: var(--ocean);
+  border: none;
 }
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--white);
 }
