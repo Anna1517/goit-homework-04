@@ -151,8 +151,10 @@ footer {
   padding-bottom: 24px;
 }
 .header-link {
+  padding-top: 24px;
   padding-bottom: 24px;
   color: var(--navyblue);
+  font-weight: 500;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   position: relative;
@@ -173,6 +175,9 @@ footer {
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.activ {
+  color: var(--ocean);
 }
 
 .header-link.activ::after {
@@ -328,6 +333,7 @@ footer {
 .avatar-descriptions {
   text-align: center;
   text-align: center;
+  margin: 8px;
 }
 .list-icons {
   display: flex;
@@ -357,10 +363,7 @@ footer {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.portfolio-item:hover {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
+
 .portfolio-btn {
   color: var(--iris);
   background-color: var(--cloud);
@@ -372,9 +375,9 @@ footer {
   cursor: pointer;
   padding: 12px 24px;
   border: 1px solid var(--cornflower);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-img {
@@ -486,9 +489,7 @@ footer {
   border-color: var(--ocean);
   color: var(--ocean);
 }
-.link-customers:hover .customers-icons {
-  fill: var(--ocean);
-}
+
 .link-customers {
   width: 168px;
   height: 88px;
@@ -523,7 +524,6 @@ footer {
   line-height: 1.5;
   color: var(--cloud);
   width: 264px;
-  margin-top: 18px;
 }
 .studio-white {
   color: var(--cloud);
